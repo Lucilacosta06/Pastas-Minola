@@ -1,0 +1,529 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none; /*revisar*/
+    list-style: none; /*revisar*/
+}
+ 
+body {
+    font-family: 'Lato', sans-serif  !important;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.content {
+    background-color: burlywood;
+    min-height: 80px;
+}
+ 
+.menu {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 25px;
+    color: rgb(181, 121, 0);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left; /*revisar*/
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: black;
+    display: block;
+    font-weight: bold;
+}
+
+.menu .navbar ul li a:hover {
+    color: rgb(181, 121, 0);
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+@media(max-width:991px) {
+
+    .content {
+        min-height: 70px;
+    }
+
+    .menu {
+        top: 0;
+        padding: 20px;
+    }
+
+    .menu label {
+        display: initial;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: burlywood;
+        display: none;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+    #menu:checked ~ .navbar {
+        display: initial;
+
+    }
+    
+}
+
+/*Sección Inicio*/
+.imagen-inicio {
+    width: 100%;
+    height: auto;
+}
+/*Sección Elaboraciones*/
+
+.information {
+    background-color: #f8f1e4;
+}
+.information-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px; 
+    max-width: 1200px;  
+    margin: auto;
+    padding: 10px;
+    justify-content: center; 
+    align-items: stretch;
+    }
+
+    .information h1 {
+            text-align: center; 
+            font-size: 28px; 
+            font-weight: bold;
+            margin-bottom: 20px;
+            position: relative; 
+          }
+          
+
+ .producto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    align-items: center;
+    text-align: center;
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: clamp(16px, 2vw, 20px);
+    transition: transform 0.3s ease-in-out;
+    } 
+    
+    .producto :hover {
+        transform: scale(1.05);
+    }
+
+.imagen-producto {
+    width: 100%; 
+    max-width: 150px;
+    height: auto;
+    object-fit: contain; 
+    margin-bottom: 10px;
+    
+}
+
+.producto h3 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+ .producto p {
+    font-size: 14px;
+ }
+#pedidos {
+    padding: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+#pedidos h2 {
+    text-align: center;
+    color: burlywood;
+}
+
+#pedidos label {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+#pedidos select,
+#pedidos input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#pedidos button {
+    background-color:rgb(181, 121, 0);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    width: 100%;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+#pedidos button:hover {
+    background-color:burlywood;
+}
+
+@media (max-width: 768px) {
+    .information-box {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 10px;
+    }
+
+    .producto {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .information-box {
+        grid-template-columns: 1fr; 
+        gap: 15px;
+    }
+
+    .producto {
+        padding: 15px;
+        font-size: 16px;
+    }
+
+    .imagen-producto {
+        max-width: 120px; 
+    }
+}
+
+
+/* Sección Ofertas*/
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.categorias {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f8f1e4; 
+}
+
+.categorias h1 {
+    font-weight: bold;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.categorias p {
+    font-size: 16px;
+    color: gray;
+    margin-bottom: 30px;
+    
+}
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+    gap: 20px;;
+}
+
+.categoria {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.categoria h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.categoria img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* Sección Nosotros */
+.nosotros {
+    background-color: #f8f1e4;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.nosotros h1 {
+    text-align: center; 
+            font-size: 28px; 
+            font-weight: bold;
+            margin-bottom: 20px;
+            position: relative; 
+}
+
+.contenedor-nosotros {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1000px;
+    margin: auto;
+    gap: 40px;
+}
+
+.texto-nosotros {
+    flex: 1;
+    text-align: left;
+}
+
+.texto-nosotros h2 {
+    font-size: 28px;
+    color: #d18b36;
+    margin-bottom: 15px;
+}
+
+.texto-nosotros p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+}
+
+.imagen-nosotros {
+    flex: 1;
+}
+
+.imagen-nosotros img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+.mapa-contenedor {
+    width: 20%;
+    margin-top: 0px;
+}
+
+/*Sección Recetas*/
+.recetas {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f8f1e4; 
+}
+
+.recetas h1 { 
+    font-size: 28px; 
+    font-weight: bold;
+    margin-bottom: 20px;
+            
+}
+
+.recetas p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.contenedor-recetas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+
+.receta {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.receta :hover {
+    transform: scale(1.05); 
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.receta img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.receta h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.receta p {
+    font-size: 1em;
+    color: #666;
+}
+
+.btn {
+    width: 100%;
+    max-width: 120px;
+    padding: 6px 12px;
+    background-color: #b07d4e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn :hover {
+    background-color: #8a5d38;
+}
+
+@media (max-width: 1024px) {
+    .contenedor-recetas {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+@media (max-width: 600px) {
+    .contenedor-recetas {
+        grid-template-columns: 1fr; 
+    }
+}
+
+   /*Footer*/
+footer {
+    background-color: #d4a373; 
+    color: white;
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start;
+    max-width: 1100px;
+    margin: auto;
+    padding: 10px;
+}
+
+.footer-links {
+    text-align: left; 
+}
+
+.footer-contacto {
+    text-align: right;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin: 5px 0;
+}
+
+.footer-links ul li a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.footer-links ul li a:hover {
+    color: #f4e1d2;
+}
+
+.footer-derechos {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+footer {
+    background-color: #d4a373; 
+    color: white;
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start;
+    max-width: 1100px;
+    margin: auto;
+    padding: 10px;
+}
+
+.footer-links {
+    text-align: left; 
+}
+
+.footer-contacto {
+    text-align: right;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin: 5px 0;
+}
+
+.footer-links ul li a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.footer-links ul li a:hover {
+    color: #f4e1d2;
+}
+
+.footer-derechos {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+}
