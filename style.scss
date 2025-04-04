@@ -4,6 +4,16 @@ $accent-color: rgb(181, 121, 0);
 $font-main: 'Lato', sans-serif;
 $font-size-base: 16px;
 
+@mixin transition-effect($property, $time) {
+  transition: $property $time ease-in-out;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
     font-family: $font-main;
     font-size: $font-size-base;
