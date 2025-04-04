@@ -10,4 +10,79 @@ body {
   background-color: #f8f1e4;
 }
 
+.menu {
+  background-color: #d4a373;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 25px;
+  color: rgb(181, 121, 0);
+  font-weight: bold;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+}
+.navbar ul li {
+  margin: 0 10px;
+}
+.navbar ul li a {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+.navbar ul li a:hover {
+  color: rgb(181, 121, 0);
+}
+
+.information {
+  padding: 40px;
+  background-color: #f8f1e4;
+}
+.information h1 {
+  text-align: center;
+  font-size: 2em;
+  color: rgb(181, 121, 0);
+}
+.information .information-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+.information .information-box .producto {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+.information .information-box .producto:hover {
+  transform: scale(1.05);
+}
+.information .information-box .producto img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+.information .information-box .producto h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+.information .information-box .producto p {
+  font-size: 1em;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .information-box {
+    grid-template-columns: 1fr;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
