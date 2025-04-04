@@ -1,4 +1,4 @@
-$primary-color: #f7dfc7;
+$primary-color: #f4a454;
 $secondary-color: #f8f1e4;
 $accent-color: rgb(181, 121, 0);
 $font-main: 'Lato', sans-serif;
@@ -8,7 +8,7 @@ $font-size-base: 16px;
   transition: $property $time ease-in-out;
 }
 
-* {
+a {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
