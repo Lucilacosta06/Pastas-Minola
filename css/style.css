@@ -1,4 +1,4 @@
-a {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -14,27 +14,49 @@ body {
   background-color: #f4a454;
   padding: 10px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .logo {
   font-size: 25px;
   color: rgb(181, 121, 0);
   font-weight: bold;
+  position: absolute;
+  left: 20px;
 }
 
+input[type=checkbox] {
+  display: none;
+}
+
+.menu-icono {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+}
 .navbar ul {
   display: flex;
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 .navbar ul li {
-  margin: 0 10px;
+  margin: 0 15px;
 }
 .navbar ul li a {
-  color: white;
+  color: black;
   font-size: 18px;
   font-weight: bold;
+  text-decoration: none;
   transition: color 0.3s ease-in-out;
 }
 .navbar ul li a:hover {
