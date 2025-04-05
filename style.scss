@@ -1,4 +1,4 @@
-$primary-color: #f4a454;
+$primary-color: burlywood;
 $secondary-color: #f8f1e4;
 $accent-color: rgb(181, 121, 0);
 $font-main: 'Lato', sans-serif;
@@ -42,12 +42,17 @@ body {
     }
 
     .menu-icono {
-      display: flex;
+      display: none;
       flex-direction: column;
       gap: 5px;
       padding: 10px;
       cursor: pointer;
-    }
+    
+    @media (max-width: 768px) { 
+      display: block;
+      cursor: pointer;
+     }
+  }
 
     .navbar {
       display: flex;
