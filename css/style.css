@@ -10,6 +10,14 @@ body {
   background-color: #f8f1e4;
 }
 
+.content {
+  background-color: burlywood;
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .menu {
   background-color: burlywood;
   padding: 10px;

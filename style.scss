@@ -20,6 +20,14 @@ body {
     background-color: $secondary-color;
   }
 
+  .content {
+    background-color: $primary-color;
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
   .menu {
     background-color: $primary-color;
     padding: 10px;
