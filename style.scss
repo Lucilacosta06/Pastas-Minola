@@ -329,3 +329,50 @@ body {
   background-color:$secondary-color;
   padding: 60px 20px;
   text-align: center;
+
+  h1 {
+    font-size: $font-size-h1;
+    font-weight: bold;
+    margin-bottom: 20px;
+    position: relative;
+    }
+ }  
+
+ .contenedor-nosotros {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: $max-width;
+  margin: auto;
+  gap: 40px;
+}
+
+.texto-nosotros {
+  flex: 1;
+  text-align: left;
+
+  h2 {
+    font-size: $font-size-h1;
+    color: $primary-color;
+    margin-bottom: 15px;
+  }
+
+  p {
+    font-size: $font-size-p;
+    color: $text-color;
+    line-height: 1.6;
+  }
+   }
+
+   .imagen-nosotros {
+    flex: 1;
+
+    img {
+        width: 100%;
+        max-width: 400px;
+        border-radius: 10px;
+    }
+}
+
+
+ 
