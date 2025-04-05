@@ -6,6 +6,8 @@ $text-color: black;
 $text-light: white;
 $highlight-color: rgb(181, 121, 0);
 $font-size-menu: 18px;
+$font-size-h1: 28px;
+$font-size-p: 16px;
 $image-width: 100%;
 $image-height: auto;
 $box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -322,3 +324,8 @@ body {
   }
 }
 
+/*Sección Nosotros*/
+.nosotros {
+  background-color:$secondary-color;
+  padding: 60px 20px;
+  text-align: center;
