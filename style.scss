@@ -3,6 +3,8 @@ $primary-color: burlywood;
 $text-color: black;
 $highlight-color: rgb(181, 121, 0);
 $font-size-menu: 18px;
+$image-width: 100%;
+$image-height: auto;
 
 // Estilos base
 .content {
@@ -104,4 +106,10 @@ $font-size-menu: 18px;
     #menu:checked ~ .navbar {
         display: flex;
     }
+}
+
+// Imagen de inicio
+.imagen-inicio {
+  width: $image-width;
+  height: $image-height;
 }
