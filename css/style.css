@@ -146,6 +146,21 @@ body {
   font-size: 14px;
 }
 
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: burlywood;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+.btn:hover {
+  background-color: #8c6243;
+}
+
 .imagen-producto {
   width: 100%;
   max-width: 150px;
