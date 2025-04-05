@@ -174,7 +174,7 @@
   border-radius: 4px;
 }
 #pedidos button {
-  background-color: #f8f1e4;
+  background-color: #a8744f;
   color: white;
   padding: 10px;
   border: none;
@@ -184,7 +184,7 @@
   transition: background 0.3s ease-in-out;
 }
 #pedidos button:hover {
-  background-color: burlywood;
+  background-color: #8c6243;
 }
 
 @media (max-width: 768px) {

@@ -12,6 +12,9 @@ $border-radius: 5px;
 $padding: 15px;
 $max-width: 1200px;
 $transition: 0.3s ease-in-out;
+$button-color: #a8744f; 
+$button-hover: #8c6243; 
+
 
 /* Estilos base*/
 .content {
@@ -209,7 +212,7 @@ $transition: 0.3s ease-in-out;
     }
 
     button {
-        background-color: $secondary-color;
+        background-color: $button-color;
         color: $text-light;
         padding: 10px;
         border: none;
@@ -219,7 +222,7 @@ $transition: 0.3s ease-in-out;
         transition: background $transition;
 
         &:hover {
-            background-color: $primary-color;
+            background-color: $button-hover;
         }
     }
 }
