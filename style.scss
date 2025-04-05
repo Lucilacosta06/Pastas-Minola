@@ -1,6 +1,7 @@
 /* Variables*/
 $primary-color: burlywood;
 $secondary-color: #f8f1e4;
+$font-family: 'Lato', sans-serif;
 $text-color: black;
 $text-light: white;
 $highlight-color: rgb(181, 121, 0);
@@ -15,7 +16,9 @@ $transition: 0.3s ease-in-out;
 $button-color: #a8744f; 
 $button-hover: #8c6243; 
 
-
+body {
+  font-family: $font-family;
+}
 /* Estilos base*/
 .content {
     background-color: $primary-color;

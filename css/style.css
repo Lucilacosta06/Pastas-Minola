@@ -1,5 +1,9 @@
 @charset "UTF-8";
 /* Variables*/
+body {
+  font-family: "Lato", sans-serif;
+}
+
 /* Estilos base*/
 .content {
   background-color: burlywood;
