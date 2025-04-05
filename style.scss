@@ -1,18 +1,25 @@
-// Variables
+/* Variables*/
 $primary-color: burlywood;
+$bg-color: #f8f1e4;
 $text-color: black;
+$text-light: white;
 $highlight-color: rgb(181, 121, 0);
 $font-size-menu: 18px;
 $image-width: 100%;
 $image-height: auto;
+$box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+$border-radius: 5px;
+$padding: 15px;
+$max-width: 1200px;
+$transition: 0.3s ease-in-out;
 
-// Estilos base
+/* Estilos base*/
 .content {
     background-color: $primary-color;
     min-height: 80px;
 }
 
-// Estilos del menú
+/* Estilos del menú*/
 .menu {
     position: absolute;
     top: 10px;
@@ -23,7 +30,7 @@ $image-height: auto;
     justify-content: space-between;
 }
 
-// Logo
+/* Logo*/
 .logo {
     font-size: 25px;
     color: $highlight-color;
@@ -31,7 +38,7 @@ $image-height: auto;
     font-weight: bold;
 }
 
-// Navegación
+/* Navegación*/
 .navbar {
     ul {
         display: flex;
@@ -57,7 +64,7 @@ $image-height: auto;
     }
 }
 
-// Menú hamburguesa
+/* Menú hamburguesa*/
 #menu {
     display: none;
 }
@@ -108,8 +115,139 @@ $image-height: auto;
     }
 }
 
-// Imagen de inicio
+/* Imagen de inicio*/
 .imagen-inicio {
   width: $image-width;
   height: $image-height;
+}
+
+// Sección Elaboraciones
+.information {
+  background-color: $bg-color;
+
+  h1 {
+      text-align: center;
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      position: relative;
+  }
+}
+
+.information-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: $max-width;
+  margin: auto;
+  padding: 10px;
+  justify-content: center;
+  align-items: stretch;
+}
+
+// Estilos de los productos
+.producto {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  background: white;
+  padding: $padding;
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
+  font-size: clamp(16px, 2vw, 20px);
+  transition: transform $transition;
+
+  &:hover {
+      transform: scale(1.05);
+  }
+
+  h3 {
+      font-size: 18px;
+      font-weight: bold;
+  }
+
+  p {
+      font-size: 14px;
+  }
+}
+
+.imagen-producto {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+// Formulario de pedidos
+#pedidos {
+  padding: 20px;
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+
+  h2 {
+      text-align: center;
+      color: $primary-color;
+  }
+
+  label {
+      font-size: 14px;
+      margin-bottom: 5px;
+  }
+
+  select,
+  input {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+  }
+
+  button {
+      background-color: $secondary-color;
+      color: $text-light;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      width: 100%;
+      cursor: pointer;
+      transition: background $transition;
+
+      &:hover {
+          background-color: $primary-color;
+      }
+  }
+}
+
+// Media Queries
+@media (max-width: 768px) {
+  .information-box {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 10px;
+  }
+
+  .producto {
+      padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .information-box {
+      grid-template-columns: 1fr;
+      gap: 15px;
+  }
+
+  .producto {
+      padding: 15px;
+      font-size: 16px;
+  }
+
+  .imagen-producto {
+      max-width: 120px;
+  }
 }
