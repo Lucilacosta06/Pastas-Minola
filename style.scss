@@ -13,7 +13,7 @@ $image-height: auto;
 $box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 $border-radius: 10px;
 $padding: 15px;
-$max-width: 1200px;
+$max-width: 100%;
 $transition: 0.3s ease-in-out;
 $button-color: #a8744f; 
 $button-hover: #8c6243; 
@@ -21,6 +21,9 @@ $button-hover: #8c6243;
 body {
   font-family: $font-family;
   text-align: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 /* Estilos base*/
 .content {
@@ -148,7 +151,7 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
     max-width: $max-width;
-    margin: auto;
+
     padding: 10px;
     justify-content: center;
     align-items: stretch;
