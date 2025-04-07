@@ -129,11 +129,6 @@ body {
     #menu:checked ~ .navbar {
         display: flex;
     }
-
-    #menu:checked ~ .elaboraciones h1 {
-      display: none;
-    }
-    
 }
 
 /* Imagen de inicio*/
@@ -150,9 +145,9 @@ body {
 
     h1 {
         text-align: center;
-        font-size: 28px;
+        font-size: $font-size-h1;
         font-weight: bold;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         position: relative;
     }
 }
@@ -303,32 +298,46 @@ body {
   
   h1 {
       font-weight: bold;
-      font-size: 2em;
-      margin-bottom: 10px;
+      font-size: $font-size-h1;
+      margin-bottom: 30px;
   }
   
   p {
       font-size: 16px;
-      color: $text-light;
+      color: $text-color;
       margin-bottom: 30px;
   }
 }
 
 .contenedor {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 20px;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  @media (max-width: 1024px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 600px) {
+    grid-template-columns: 1fr;
+  }
 }
+
 
 .categoria {
   background: white;
-  padding: 20px;
   border-radius: 10px;
-  width: 250px;
   box-shadow: $box-shadow;
+  padding: 20px;
+  text-align: center;
+  transition: $transition $box-shadow;
 
   &:hover {
     transform: scale(1.05);
+    box-shadow: $box-shadow;
 }
   
   h3 {
@@ -338,7 +347,7 @@ body {
   
   img {
       width: 100%;
-      border-radius: 5px;
+      border-radius: $border-radius;
   }
 }
 

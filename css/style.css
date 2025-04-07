@@ -99,9 +99,6 @@ body {
   #menu:checked ~ .navbar {
     display: flex;
   }
-  #menu:checked ~ .elaboraciones h1 {
-    display: none;
-  }
 }
 /* Imagen de inicio*/
 .imagen-inicio {
@@ -119,7 +116,7 @@ body {
   text-align: center;
   font-size: 28px;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   position: relative;
 }
 
@@ -253,30 +250,45 @@ body {
 }
 .categorias h1 {
   font-weight: bold;
-  font-size: 2em;
-  margin-bottom: 10px;
+  font-size: 28px;
+  margin-bottom: 30px;
 }
 .categorias p {
   font-size: 16px;
-  color: white;
+  color: black;
   margin-bottom: 30px;
 }
 
 .contenedor {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 20px;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+@media (max-width: 1024px) {
+  .contenedor {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .contenedor {
+    grid-template-columns: 1fr;
+  }
 }
 
 .categoria {
   background: white;
-  padding: 20px;
   border-radius: 10px;
-  width: 250px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  transition: 0.3s ease-in-out 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 .categoria:hover {
   transform: scale(1.05);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 .categoria h3 {
   font-size: 1.5em;
@@ -284,7 +296,7 @@ body {
 }
 .categoria img {
   width: 100%;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 /*Sección Nosotros*/
