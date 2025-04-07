@@ -30,10 +30,9 @@ body {
   margin-left: 20px;
 }
 .Logo img {
-  height: 30px !important;
+  height: 30px;
   width: auto;
   display: block;
-  align-items: center;
 }
 
 /* Navegación*/
@@ -100,6 +99,9 @@ body {
   #menu:checked ~ .navbar {
     display: flex;
   }
+  #menu:checked ~ .elaboraciones h1 {
+    display: none;
+  }
 }
 /* Imagen de inicio*/
 .imagen-inicio {
@@ -109,6 +111,8 @@ body {
 
 /* Sección Elaboraciones*/
 .information {
+  text-align: center;
+  padding: 50px 20px;
   background-color: #f8f1e4;
 }
 .information h1 {
@@ -124,7 +128,7 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
   max-width: 100%;
-  padding: 10px;
+  padding: 20px;
   justify-content: center;
   align-items: stretch;
 }
@@ -145,6 +149,9 @@ body {
 }
 .producto:hover {
   transform: scale(1.05);
+}
+.producto h1 {
+  font-size: 28px;
 }
 .producto h3 {
   font-size: 18px;

@@ -47,10 +47,9 @@ body {
     margin-left: 20px;
   
   img {
-    height: 30px !important;
+    height: 30px;
     width: auto;
     display: block;
-    align-items: center;
   }
 }
 
@@ -130,6 +129,11 @@ body {
     #menu:checked ~ .navbar {
         display: flex;
     }
+
+    #menu:checked ~ .elaboraciones h1 {
+      display: none;
+    }
+    
 }
 
 /* Imagen de inicio*/
@@ -140,7 +144,9 @@ body {
 
 /* Sección Elaboraciones*/
 .information {
-    background-color: $secondary-color;
+  text-align: center;
+  padding: 50px 20px;
+  background-color: $secondary-color;
 
     h1 {
         text-align: center;
@@ -156,8 +162,7 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
     max-width: $max-width;
-
-    padding: 10px;
+    padding: 20px;
     justify-content: center;
     align-items: stretch;
 }
@@ -178,6 +183,10 @@ body {
 
     &:hover {
         transform: scale(1.05);
+    }
+
+    h1 {
+      font-size: $font-size-h1;
     }
 
     h3 {
