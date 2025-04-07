@@ -10,7 +10,7 @@ body {
 
 /* Estilos base*/
 .content {
-  background-color: burlywood;
+  background-color: #deb887;
   min-height: 80px;
 }
 
@@ -26,11 +26,14 @@ body {
 }
 
 /* Logo*/
-.logo {
-  font-size: 25px;
-  color: rgb(181, 121, 0);
-  text-transform: uppercase;
-  font-weight: bold;
+.Logo {
+  margin-left: 20px;
+}
+.Logo img {
+  height: 30px !important;
+  width: auto;
+  display: block;
+  align-items: center;
 }
 
 /* Navegación*/
@@ -51,7 +54,7 @@ body {
   text-decoration: none;
 }
 .navbar ul li a:hover {
-  color: rgb(181, 121, 0);
+  color: #b57900;
 }
 
 /* Menú hamburguesa*/
@@ -84,7 +87,7 @@ body {
     top: 100%;
     left: 0;
     right: 0;
-    background-color: burlywood;
+    background-color: #deb887;
     display: none;
     flex-direction: column;
   }
@@ -154,7 +157,7 @@ body {
 .btn {
   display: inline-block;
   padding: 10px 20px;
-  background-color: burlywood;
+  background-color: #deb887;
   color: white;
   text-decoration: none;
   font-size: 16px;
@@ -184,7 +187,7 @@ body {
 }
 #pedidos h2 {
   text-align: center;
-  color: burlywood;
+  color: #deb887;
 }
 #pedidos label {
   font-size: 14px;
@@ -305,7 +308,7 @@ body {
 }
 .texto-nosotros h2 {
   font-size: 28px;
-  color: burlywood;
+  color: #deb887;
   margin-bottom: 15px;
 }
 .texto-nosotros p {
@@ -397,7 +400,7 @@ body {
 
 /*Footer*/
 footer {
-  background-color: burlywood;
+  background-color: #deb887;
   color: white;
   padding: 20px 0;
 }

@@ -1,10 +1,10 @@
 /* Variables*/
-$primary-color: burlywood;
+$primary-color: #deb887;
 $secondary-color: #f8f1e4;
 $font-family: 'Lato', sans-serif;
 $text-color: black;
 $text-light: white;
-$highlight-color: rgb(181, 121, 0);
+$highlight-color: #b57900;
 $font-size-menu: 18px;
 $font-size-h1: 28px;
 $font-size-p: 16px;
@@ -43,12 +43,17 @@ body {
 }
 
 /* Logo*/
-.logo {
-    font-size: 25px;
-    color: $highlight-color;
-    text-transform: uppercase;
-    font-weight: bold;
+.Logo {
+    margin-left: 20px;
+  
+  img {
+    height: 30px !important;
+    width: auto;
+    display: block;
+    align-items: center;
+  }
 }
+
 
 /* Navegación*/
 .navbar {
