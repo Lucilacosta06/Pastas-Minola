@@ -1,11 +1,25 @@
 @charset "UTF-8";
 /* Variables*/
+/*Extend*/
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #deb887;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 10px;
+  transition: 0.3s ease-in-out;
+  text-decoration: none;
+}
+
+/*Mixin*/
 body {
   font-family: "Lato", sans-serif;
   text-align: center;
   width: 100%;
-  margin: 0;
   padding: 0;
+  margin: 0;
 }
 
 .content {
@@ -157,17 +171,6 @@ body {
   font-size: 14px;
 }
 
-.btn {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #deb887;
-  color: white;
-  text-decoration: none;
-  font-size: 16px;
-  font-weight: bold;
-  border-radius: 10px;
-  transition: 0.3s ease-in-out;
-}
 .btn:hover {
   background-color: #8c6243;
 }
@@ -205,114 +208,18 @@ body {
   border-radius: 4px;
 }
 #pedidos button {
-  background-color: #a8744f;
+  margin-top: 1rem;
+  background-color: #a66b3f;
   color: white;
-  padding: 10px;
+  padding: 0.7rem;
   border: none;
-  border-radius: 4px;
+  border-radius: 6px;
   width: 100%;
+  font-weight: 500;
   cursor: pointer;
-  transition: background 0.3s ease-in-out;
 }
 #pedidos button:hover {
   background-color: #8c6243;
-}
-
-/* Media Queries*/
-@media (max-width: 768px) {
-  .information-box {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 10px;
-  }
-  .producto {
-    padding: 10px;
-  }
-}
-@media (max-width: 480px) {
-  .information-box {
-    grid-template-columns: 1fr;
-    gap: 15px;
-  }
-  .producto {
-    padding: 15px;
-    font-size: 16px;
-  }
-  .imagen-producto {
-    max-width: 120px;
-  }
-}
-@media (max-width: 1024px) {
-  .contenedor {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media (max-width: 1024px) and (max-width: 600px) {
-  .contenedor {
-    grid-template-columns: 1fr;
-  }
-}
-@media (max-width: 768px) {
-  .contenedor-nosotros {
-    grid-template-columns: 1fr;
-  }
-  img {
-    max-width: 100%;
-    height: auto;
-    margin: 0 auto;
-  }
-}
-.texto-nosotros {
-  text-align: left;
-}
-.texto-nosotros h2 {
-  font-size: 1.8em;
-}
-
-/*Sección Ofertas*/
-.categorias {
-  text-align: center;
-  padding: 50px 20px;
-  background-color: #f8f1e4;
-}
-.categorias h1 {
-  font-weight: bold;
-  font-size: 28px;
-  margin-bottom: 30px;
-}
-.categorias p {
-  font-size: 16px;
-  color: black;
-  margin-bottom: 30px;
-}
-
-.contenedor {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
-  justify-content: center;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.categoria {
-  background: white;
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  text-align: center;
-  transition: 0.3s ease-in-out 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-.categoria:hover {
-  transform: scale(1.05);
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-.categoria h3 {
-  font-size: 1.5em;
-  margin: 10px 0;
-}
-.categoria img {
-  width: 100%;
-  border-radius: 10px;
 }
 
 /*Sección Nosotros*/
@@ -368,28 +275,20 @@ body {
   padding: 50px 20px;
   background-color: #f8f1e4;
 }
-.recetas h1 {
+
+h1 {
   font-size: 28px;
   font-weight: bold;
   margin-bottom: 30px;
 }
-.recetas .contenedor-recetas {
+
+.contenedor-recetas {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 20px;
   justify-content: center;
   max-width: 1200px;
   margin: 0 auto;
-}
-@media (max-width: 1024px) {
-  .recetas .contenedor-recetas {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media (max-width: 600px) {
-  .recetas .contenedor-recetas {
-    grid-template-columns: 1fr;
-  }
 }
 
 .receta {
@@ -417,19 +316,6 @@ body {
   color: black;
 }
 
-.btn {
-  width: 100%;
-  max-width: 120px;
-  padding: 6px 12px;
-  background-color: #f8f1e4;
-  color: #a8744f;
-  border: none;
-  border-radius: 10px;
-  font-size: 14px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: 0.3s ease-in-out;
-}
 .btn:hover {
   background-color: #8c6243;
 }
@@ -475,6 +361,113 @@ footer .footer-links ul li a:hover {
   text-align: center;
   margin-top: 10px;
   font-size: 14px;
+}
+
+/* Media Queries*/
+@media (max-width: 768px) {
+  .information-box {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+  }
+  .producto {
+    padding: 10px;
+  }
+}
+@media (max-width: 480px) {
+  .information-box {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  .producto {
+    padding: 15px;
+    font-size: 16px;
+  }
+  .imagen-producto {
+    max-width: 120px;
+  }
+}
+@media (max-width: 1024px) {
+  .contenedor {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 1024px) and (max-width: 600px) {
+  .contenedor {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 768px) {
+  .contenedor-nosotros {
+    grid-template-columns: 1fr;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+}
+.texto-nosotros {
+  text-align: left;
+}
+.texto-nosotros h2 {
+  font-size: 1.8em;
+}
+
+.categorias {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f8f1e4;
+}
+.categorias h1 {
+  font-weight: bold;
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+.categorias p {
+  font-size: 16px;
+  color: black;
+  margin-bottom: 30px;
+}
+
+.contenedor {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.categoria {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  transition: 0.3s ease-in-out 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.categoria:hover {
+  transform: scale(1.05);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.categoria h3 {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+.categoria img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+@media (max-width: 1024px) {
+  .contenedor-recetas {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 1024px) and (max-width: 600px) {
+  .contenedor-recetas {
+    grid-template-columns: 1fr;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
