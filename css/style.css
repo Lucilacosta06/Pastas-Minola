@@ -1,0 +1,473 @@
+@charset "UTF-8";
+/* Variables*/
+/*Extend*/
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #deb887;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 10px;
+  transition: 0.3s ease-in-out;
+  text-decoration: none;
+}
+
+/*Mixin*/
+body {
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.content {
+  background-color: #deb887;
+  min-height: 80px;
+}
+
+/* Estilos del menú*/
+.menu {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo*/
+.Logo {
+  margin-left: 20px;
+}
+.Logo img {
+  height: 30px;
+  width: auto;
+  display: block;
+}
+
+/* Navegación*/
+.navbar ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+.navbar ul li {
+  position: relative;
+}
+.navbar ul li a {
+  font-size: 18px;
+  padding: 20px;
+  color: black;
+  display: block;
+  font-weight: bold;
+  text-decoration: none;
+}
+.navbar ul li a:hover {
+  color: #b57900;
+}
+
+/* Menú hamburguesa*/
+#menu {
+  display: none;
+}
+
+.menu-icono {
+  width: 25px;
+}
+
+.menu label {
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 991px) {
+  .content {
+    min-height: 70px;
+  }
+  .menu {
+    top: 0;
+    padding: 20px;
+  }
+  .menu label {
+    display: block;
+  }
+  .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #deb887;
+    display: none;
+    flex-direction: column;
+  }
+  .navbar ul {
+    flex-direction: column;
+  }
+  .navbar ul li {
+    width: 100%;
+  }
+  #menu:checked ~ .navbar {
+    display: flex;
+  }
+}
+/* Sección inicio*/
+.imagen-inicio {
+  width: 100%;
+  height: auto;
+}
+
+/* Sección Elaboraciones*/
+.information {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f8f1e4;
+}
+.information h1 {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.information-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 100%;
+  padding: 20px;
+  justify-content: center;
+  align-items: stretch;
+}
+
+/* Estilos de los productos*/
+.producto {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-size: clamp(16px, 2vw, 20px);
+  transition: transform 0.3s ease-in-out;
+}
+.producto:hover {
+  transform: scale(1.05);
+}
+.producto h1 {
+  font-size: 28px;
+}
+.producto h3 {
+  font-size: 18px;
+  font-weight: bold;
+}
+.producto p {
+  font-size: 14px;
+}
+
+.btn:hover {
+  background-color: #8c6243;
+}
+
+.imagen-producto {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+/*Formulario de pedidos*/
+#pedidos {
+  padding: 20px;
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+#pedidos h2 {
+  text-align: center;
+  color: #deb887;
+}
+#pedidos label {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+#pedidos select,
+#pedidos input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+#pedidos button {
+  margin-top: 1rem;
+  background-color: #a66b3f;
+  color: white;
+  padding: 0.7rem;
+  border: none;
+  border-radius: 6px;
+  width: 100%;
+  font-weight: 500;
+  cursor: pointer;
+}
+#pedidos button:hover {
+  background-color: #8c6243;
+}
+
+/*Sección Nosotros*/
+.nosotros {
+  background-color: #f8f1e4;
+  padding: 50px 20px;
+  text-align: center;
+}
+.nosotros h1 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.contenedor-nosotros {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  margin: auto;
+  gap: 40px;
+  padding: 0 20px;
+}
+
+.texto-nosotros {
+  flex: 1;
+  text-align: left;
+}
+.texto-nosotros h2 {
+  font-size: 28px;
+  color: #deb887;
+  margin-bottom: 15px;
+}
+.texto-nosotros p {
+  font-size: 16px;
+  color: black;
+  line-height: 1.6;
+}
+
+.imagen-nosotros {
+  flex: 1;
+}
+.imagen-nosotros img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+}
+
+/*Sección Recetas*/
+.recetas {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f8f1e4;
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.contenedor-recetas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.receta {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  transition: 0.3s ease-in-out 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.receta:hover {
+  transform: scale(1.05);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.receta img {
+  width: 100%;
+  border-radius: 10px;
+}
+.receta h3 {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+.receta p {
+  font-size: 16px;
+  color: black;
+}
+
+.btn:hover {
+  background-color: #8c6243;
+}
+
+/*Footer*/
+footer {
+  background-color: #deb887;
+  color: white;
+  padding: 20px 0;
+}
+footer .footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1100px;
+  margin: auto;
+  padding: 10px;
+}
+footer .footer-links {
+  text-align: left;
+}
+footer .footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+footer .footer-links ul li {
+  margin: 5px 0;
+}
+footer .footer-links ul li a {
+  text-decoration: none;
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+footer .footer-links ul li a:hover {
+  color: #f8f1e4;
+}
+
+.footer-contacto {
+  text-align: right;
+}
+
+.footer-derechos {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+/* Media Queries*/
+@media (max-width: 768px) {
+  .information-box {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+  }
+  .producto {
+    padding: 10px;
+  }
+}
+@media (max-width: 480px) {
+  .information-box {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  .producto {
+    padding: 15px;
+    font-size: 16px;
+  }
+  .imagen-producto {
+    max-width: 120px;
+  }
+}
+@media (max-width: 1024px) {
+  .contenedor {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 1024px) and (max-width: 600px) {
+  .contenedor {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 768px) {
+  .contenedor-nosotros {
+    grid-template-columns: 1fr;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+}
+.texto-nosotros {
+  text-align: left;
+}
+.texto-nosotros h2 {
+  font-size: 1.8em;
+}
+
+.categorias {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f8f1e4;
+}
+.categorias h1 {
+  font-weight: bold;
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+.categorias p {
+  font-size: 16px;
+  color: black;
+  margin-bottom: 30px;
+}
+
+.contenedor {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.categoria {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  transition: 0.3s ease-in-out 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.categoria:hover {
+  transform: scale(1.05);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.categoria h3 {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+.categoria img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+@media (max-width: 1024px) {
+  .contenedor-recetas {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 1024px) and (max-width: 600px) {
+  .contenedor-recetas {
+    grid-template-columns: 1fr;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
