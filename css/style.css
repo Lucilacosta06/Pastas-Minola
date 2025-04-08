@@ -8,7 +8,6 @@ body {
   padding: 0;
 }
 
-/* Estilos base*/
 .content {
   background-color: #deb887;
   min-height: 80px;
@@ -100,7 +99,7 @@ body {
     display: flex;
   }
 }
-/* Imagen de inicio*/
+/* Sección inicio*/
 .imagen-inicio {
   width: 100%;
   height: auto;
@@ -242,6 +241,33 @@ body {
     max-width: 120px;
   }
 }
+@media (max-width: 1024px) {
+  .contenedor {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 1024px) and (max-width: 600px) {
+  .contenedor {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 768px) {
+  .contenedor-nosotros {
+    grid-template-columns: 1fr;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+}
+.texto-nosotros {
+  text-align: left;
+}
+.texto-nosotros h2 {
+  font-size: 1.8em;
+}
+
 /*Sección Ofertas*/
 .categorias {
   text-align: center;
@@ -266,16 +292,6 @@ body {
   justify-content: center;
   max-width: 1200px;
   margin: 0 auto;
-}
-@media (max-width: 1024px) {
-  .contenedor {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media (max-width: 600px) {
-  .contenedor {
-    grid-template-columns: 1fr;
-  }
 }
 
 .categoria {
@@ -302,23 +318,24 @@ body {
 /*Sección Nosotros*/
 .nosotros {
   background-color: #f8f1e4;
-  padding: 60px 20px;
+  padding: 50px 20px;
   text-align: center;
 }
 .nosotros h1 {
   font-size: 28px;
   font-weight: bold;
-  margin-bottom: 20px;
-  position: relative;
+  margin-bottom: 30px;
 }
 
 .contenedor-nosotros {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
   justify-content: center;
   max-width: 100%;
   margin: auto;
   gap: 40px;
+  padding: 0 20px;
 }
 
 .texto-nosotros {
