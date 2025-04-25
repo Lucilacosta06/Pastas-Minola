@@ -1,0 +1,44 @@
+footer {
+    background-color: $primary-color;
+    color: $text-light;
+    padding: 20px 0;
+  
+    .footer-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      max-width: 1100px;
+      margin: auto;
+      padding: 10px;
+    }
+  
+    .footer-links ul {
+      list-style: none;
+      padding: 0;
+  
+      li {
+        margin: 5px 0;
+  
+        a {
+          text-decoration: none;
+          color: $text-light;
+          transition: $transition;
+  
+          &:hover {
+            color: $secondary-color;
+          }
+        }
+      }
+    }
+  
+    .footer-contacto {
+      text-align: right;
+    }
+  
+    .footer-derechos {
+      text-align: center;
+      margin-top: 10px;
+      font-size: 14px;
+    }
+  }
+  

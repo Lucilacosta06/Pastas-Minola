@@ -1,0 +1,18 @@
+/*botón productos*/
+.btn {
+    @extend %btn;
+  
+    &:hover {
+      background-color: $button-hover;
+    }
+  }
+
+  /*botón formulario*/
+  button {
+    margin-top: 1rem;
+    @include button;
+
+    &:hover {
+        background-color: $button-hover;
+    }
+}

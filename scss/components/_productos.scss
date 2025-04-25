@@ -1,0 +1,41 @@
+.producto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background: white;
+    padding: $padding;
+    border-radius: $border-radius;
+    box-shadow: $box-shadow;
+    font-size: clamp(16px, 2vw, 20px);
+    transition: transform $transition;
+  
+    &:hover {
+      transform: scale(1.05);
+    }
+  
+    h1 {
+      font-size: $font-size-h1;
+      font-family: $font-title;
+    }
+  
+    h3 {
+      font-size: 18px;
+      font-weight: bold;
+    }
+  
+    p {
+      font-size: 14px;
+    }
+  }
+
+  .imagen-producto {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+ 

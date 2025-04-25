@@ -1,0 +1,25 @@
+/* Sección Elaboraciones*/
+.information {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: $secondary-color;
+
+    h1 {
+        text-align: center;
+        font-family: $font-title;
+        font-size: $font-size-h1;
+        font-weight: bold;
+        margin-bottom: 10px;
+        position: relative;
+    }
+}
+
+.information-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: $max-width;
+    padding: 20px;
+    justify-content: center;
+    align-items: stretch;
+}

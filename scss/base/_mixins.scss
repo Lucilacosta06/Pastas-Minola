@@ -1,0 +1,24 @@
+/*Extend*/
+%btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: $primary-color;
+    color: $text-light;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: $border-radius;
+    transition: $transition;
+    text-decoration: none;
+   }
+  
+   /*Mixin*/
+   @mixin button {
+    background-color: #a66b3f;
+    color: white;
+    padding: 0.7rem;
+    border: none;
+    border-radius: 6px;
+    width: 100%;
+    font-weight: 500;
+    cursor: pointer;
+   }
