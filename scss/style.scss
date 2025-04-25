@@ -2,7 +2,7 @@
 $primary-color: #deb887;
 $secondary-color: #f8f1e4;
 $font-family: 'Lato', sans-serif;
-$font-title:  'Yeseva One', serif;
+$font-title: "Cormorant Upright", serif;
 $text-color: black;
 $text-light: white;
 $highlight-color: #b57900;
@@ -46,12 +46,16 @@ $button-hover: #8c6243;
 
 body {
   font-family: $font-family;
-  font-family: $font-title;
   text-align: center;
   width: 100%;
   padding: 0;
   margin: 0;
 }
+
+h1 {
+  font-family: $font-title !important;
+}
+
 
 .content {
   background-color: $primary-color;
