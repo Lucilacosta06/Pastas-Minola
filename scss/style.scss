@@ -1,3 +1,24 @@
+@import 'base/variables';
+@import 'base/mixins';
+
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/media';
+
+@import 'components/botones';
+@import 'components/productos';
+
+@import 'sections/inicio';
+@import 'sections/elaboraciones';
+@import 'sections/ofertas';
+@import 'sections/nosotros';
+@import 'sections/recetas';
+@import 'sections/formularios';
+
+
+
+
+
 /* Variables*/
 $primary-color: #deb887;
 $secondary-color: #f8f1e4;
@@ -230,8 +251,6 @@ body {
     background-color: $button-hover;
   }
  }
-
-
 
 .imagen-producto {
     width: 100%;
