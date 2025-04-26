@@ -1,28 +1,23 @@
 {
     "version": 2,
-    "builds": [
-      {
-        "src": "*.html",
-        "use": "@vercel/static"
-      }
-    ],
     "routes": [
       {
         "src": "/elaboraciones",
-        "dest": "/elaboraciones.html"
+        "dest": "/pages/elaboraciones.html"
       },
       {
         "src": "/ofertas",
-        "dest": "/ofertas.html"
+        "dest": "/pages/ofertas.html"
       },
       {
         "src": "/nosotros",
-        "dest": "/nosotros.html"
+        "dest": "/pages/nosotros.html"
       },
       {
         "src": "/recetas",
-        "dest": "/recetas.html"
+        "dest": "/pages/recetas.html"
       }
     ]
   }
+  
   
