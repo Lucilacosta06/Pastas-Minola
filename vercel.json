@@ -3,19 +3,19 @@
     "routes": [
       {
         "src": "/elaboraciones",
-        "dest": "/pages/elaboraciones.html"
+        "dest": "./pages/elaboraciones.html"
       },
       {
         "src": "/ofertas",
-        "dest": "/pages/ofertas.html"
+        "dest": "./pages/ofertas.html"
       },
       {
         "src": "/nosotros",
-        "dest": "/pages/nosotros.html"
+        "dest": "./pages/nosotros.html"
       },
       {
         "src": "/recetas",
-        "dest": "/pages/recetas.html"
+        "dest": "./pages/recetas.html"
       }
     ]
   }
