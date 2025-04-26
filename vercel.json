@@ -2,19 +2,19 @@
     "version": 2,
     "routes": [
       {
-        "src": "/elaboraciones",
+        "src": "./pages/elaboraciones.html",
         "dest": "./pages/elaboraciones.html"
       },
       {
-        "src": "/ofertas",
+        "src": "./pages/ofertas.html",
         "dest": "./pages/ofertas.html"
       },
       {
-        "src": "/nosotros",
+        "src": "./pages/nosotros.html",
         "dest": "./pages/nosotros.html"
       },
       {
-        "src": "/recetas",
+        "src": "./pages/recetas.html",
         "dest": "./pages/recetas.html"
       }
     ]
