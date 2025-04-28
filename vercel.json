@@ -1,10 +1,10 @@
 {
     "version": 2,
     "routes": [
-      { "src": "/elaboraciones", "dest": "/pages/elaboraciones.html" },
-      { "src": "/ofertas", "dest": "/pages/ofertas.html" },
-      { "src": "/nosotros", "dest": "/pages/nosotros.html" },
-      { "src": "/recetas", "dest": "/pages/recetas.html" }
+      { "src": "/elaboraciones", "dest": "/paginas/elaboraciones.html" },
+      { "src": "/ofertas", "dest": "/paginas/ofertas.html" },
+      { "src": "/nosotros", "dest": "/paginas/nosotros.html" },
+      { "src": "/recetas", "dest": "/paginas/recetas.html" }
     ]
   }
   
